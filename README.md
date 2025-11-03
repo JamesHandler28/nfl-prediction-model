@@ -27,27 +27,28 @@ Here is a breakdown of what I built and what I learned along the way:
 
 After all the cleaning, feature engineering, and tuning, the final model achieved **57.66% accuracy** on the most recent season of games (the test set).
 
-I then used the final trained model to predict the upcoming week's games. Here are the results:
+I then used the final trained model to predict the upcoming week's games (2025 Week 4). Here are the results:
 
-| Home Team                 | Away Team               | Predicted Winner | Win Probability |
-| ------------------------- | ----------------------- | ---------------- | --------------- |
-| Pittsburgh Steelers       | Minnesota Vikings       | Steelers         | 65.7%           |
-| Atlanta Falcons           | Washington Commanders   | Commanders       | 55.6%           |
-| Buffalo Bills             | New Orleans Saints      | Bills            | 59.1%           |
-| Detroit Lions             | Cleveland Browns        | Lions            | 50.5%           |
-| Houston Texans            | Tennessee Titans        | Titans           | 50.2%           |
-| New England Patriots      | Carolina Panthers       | Patriots         | 63.1%           |
-| New York Giants           | Los Angeles Chargers    | Chargers         | 57.7%           |
-| Tampa Bay Buccaneers      | Philadelphia Eagles     | Eagles           | 55.5%           |
-| Los Angeles Rams          | Indianapolis Colts      | Rams             | 54.9%           |
-| San Francisco 49ers       | Jacksonville Jaguars    | 49ers            | 64.6%           |
-| Kansas City Chiefs        | Baltimore Ravens        | Chiefs           | 60.3%           |
-| Las Vegas Raiders         | Chicago Bears           | Raiders          | 54.4%           |
-| Dallas Cowboys            | Green Bay Packers       | Cowboys          | 57.4%           |
-| Miami Dolphins            | New York Jets           | Jets             | 50.1%           |
-| Denver Broncos            | Cincinnati Bengals      | Broncos          | 65.5%           |
-
+| Home Team                 | Away Team               | Predicted Winner | Win Probability | Real Winner | Correct? |
+| ------------------------- | ----------------------- | ---------------- | --------------- | ----------- | -------- |
+| Pittsburgh Steelers       | Minnesota Vikings       | Steelers         | 65.7%           | Steelers    | Yes      |
+| Atlanta Falcons           | Washington Commanders   | Commanders       | 55.6%           | Falcons     | No       |
+| Buffalo Bills             | New Orleans Saints      | Bills            | 59.1%           | Bills       | Yes      |
+| Detroit Lions             | Cleveland Browns        | Lions            | 50.5%           | Lions       | Yes      |
+| Houston Texans            | Tennessee Titans        | Titans           | 50.2%           | Texans      | No       |
+| New England Patriots      | Carolina Panthers       | Patriots         | 63.1%           | Patriots    | Yes      |
+| New York Giants           | Los Angeles Chargers    | Chargers         | 57.7%           | Giants      | No       |
+| Tampa Bay Buccaneers      | Philadelphia Eagles     | Eagles           | 55.5%           | Eagles      | Yes      |
+| Los Angeles Rams          | Indianapolis Colts      | Rams             | 54.9%           | Rams        | Yes      |
+| San Francisco 49ers       | Jacksonville Jaguars    | 49ers            | 64.6%           | Jaguars     | No       |
+| Kansas City Chiefs        | Baltimore Ravens        | Chiefs           | 60.3%           | Chiefs      | Yes      |
+| Las Vegas Raiders         | Chicago Bears           | Raiders          | 54.4%           | Bears       | No       |
+| Dallas Cowboys            | Green Bay Packers       | Cowboys          | 57.4%           | Tie         | No       |
+| Miami Dolphins            | New York Jets           | Jets             | 50.1%           | Dolphins    | No       |
+| Denver Broncos            | Cincinnati Bengals      | Broncos          | 65.5%           | Broncos     | Yes      |
 ---
+
+Accuracy: 53.3%
 
 ### Tech Stack
 
